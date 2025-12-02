@@ -34,7 +34,7 @@ You can turn the camera by your hand or use utility from RoboCrew lib (especiall
 ```python
 from robocrew.robots.XLeRobot.servo_controls import ServoControler
 
-servo_controler = ServoControler(left_arm_head_usb='/dev/left_arm')
+servo_controler = ServoControler(left_arm_head_usb='/dev/arm_left')
 servo_controler.turn_head_to_vla_position()
 ```
 
