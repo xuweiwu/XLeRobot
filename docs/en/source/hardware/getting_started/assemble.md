@@ -19,7 +19,7 @@ Official Assembly Videos from Wowrobo:
 Tips from Greg's Tech
 
 <iframe width="800" height="600" 
-    src="https://www.youtube.com/watch?v=Ezy3EepLSm4" 
+    src="https://www.youtube.com/embed/Ezy3EepLSm4" 
     frameborder="0" 
     allowfullscreen>
 </iframe>
