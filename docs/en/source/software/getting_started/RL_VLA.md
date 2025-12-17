@@ -6,8 +6,6 @@ Single arm VLA policy implementation on XLeRobot:
   <source src="https://github.com/Vector-Wangel/XLeRobot-assets/blob/main/videos/Real_demos/Act_on_RPi_Xle.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-  Your browser does not support the video tag.
-</video>
 
 # Vision-Language-Action (VLA) Training for XLeRobot
 
