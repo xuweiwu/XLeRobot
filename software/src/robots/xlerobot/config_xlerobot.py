@@ -23,27 +23,46 @@ from ..config import RobotConfig
 
 def xlerobot_cameras_config() -> dict[str, CameraConfig]:
     return {
-        # "left_wrist": OpenCVCameraConfig(
-        #     index_or_path="/dev/video0", fps=30, width=640, height=480, rotation=Cv2Rotation.NO_ROTATION
-        # ),
+        "left_wrist": OpenCVCameraConfig(
+            index_or_path='/dev/v4l/by-path/platform-a80aa10000.usb-usb-0:2.3:1.0-video-index0', 
+            fps=30,
+            width=640,
+            height=480,
+            color_mode=ColorMode.RGB,
+            rotation=Cv2Rotation.NO_ROTATION,
+            fourcc="MJPG"
+        ),
 
-        # "right_wrist": OpenCVCameraConfig(
-        #     index_or_path="/dev/video2", fps=30, width=640, height=480, rotation=Cv2Rotation.NO_ROTATION
-        # ),  
-
-        # "head(RGDB)": OpenCVCameraConfig(
-        #     index_or_path="/dev/video2", fps=30, width=640, height=480, rotation=Cv2Rotation.NO_ROTATION
-        # ),                     
+        "right_wrist": OpenCVCameraConfig(
+            index_or_path='/dev/v4l/by-path/platform-a80aa10000.usb-usb-0:2.4:1.0-video-index0',
+            fps=30,
+            width=640,
+            height=480,
+            color_mode=ColorMode.RGB,
+            rotation=Cv2Rotation.NO_ROTATION,
+            fourcc="MJPG"
+        ),
         
-        # "head": RealSenseCameraConfig(
-        #     serial_number_or_name="125322060037",  # Replace with camera SN
+        "head": RealSenseCameraConfig(
+            serial_number_or_name="213622300072",  # Replace with camera SN
+            fps=30,
+            width=640,
+            height=480,
+            color_mode=ColorMode.RGB,
+            rotation=Cv2Rotation.NO_ROTATION,
+            use_depth=False
+        ),
+
+        # "rear": RealSenseCameraConfig(
+        #     serial_number_or_name="308222301716",  # Replace with camera SN
         #     fps=30,
-        #     width=1280,
-        #     height=720,
-        #     color_mode=ColorMode.BGR, # Request BGR output
+        #     width=640,
+        #     height=480,
+        #     color_mode=ColorMode.RGB,
         #     rotation=Cv2Rotation.NO_ROTATION,
-        #     use_depth=True
+        #     use_depth=False
         # ),
+ 
     }
 
 
@@ -51,8 +70,8 @@ def xlerobot_cameras_config() -> dict[str, CameraConfig]:
 @dataclass
 class XLerobotConfig(RobotConfig):
     
-    port1: str = "/dev/ttyACM0"  # port to connect to the bus (so101 + head camera)
-    port2: str = "/dev/ttyACM1"  # port to connect to the bus (same as lekiwi setup)
+    port_right_head: str = "/dev/xlerobot_right_head"  # port to connect to the bus (so101 + head camera)
+    port_left_base: str = "/dev/xlerobot_left_base"  # port to connect to the bus (same as lekiwi setup)
     disable_torque_on_disconnect: bool = True
 
     # `max_relative_target` limits the magnitude of the relative positional target vector for safety purposes.
@@ -65,20 +84,20 @@ class XLerobotConfig(RobotConfig):
     # Set to `True` for backward compatibility with previous policies/dataset
     use_degrees: bool = False
 
-    teleop_keys: dict[str, str] = field(
+    base_teleop_keys: dict[str, str] = field(
         default_factory=lambda: {
             # Movement
-            "forward": "i",
-            "backward": "k",
-            "left": "j",
-            "right": "l",
-            "rotate_left": "u",
-            "rotate_right": "o",
+            "forward": "8",
+            "backward": "2",
+            "left": "4",
+            "right": "6",
+            "rotate_left": "7",
+            "rotate_right": "9",
             # Speed control
-            "speed_up": "n",
-            "speed_down": "m",
+            "speed_up": "1",
+            "speed_down": "3",
             # quit teleop
-            "quit": "b",
+            "quit": "0",
         }
     )
 
@@ -107,20 +126,20 @@ class XLerobotClientConfig(RobotConfig):
     port_zmq_cmd: int = 5555
     port_zmq_observations: int = 5556
 
-    teleop_keys: dict[str, str] = field(
+    base_teleop_keys: dict[str, str] = field(
         default_factory=lambda: {
             # Movement
-            "forward": "i",
-            "backward": "k",
-            "left": "j",
-            "right": "l",
-            "rotate_left": "u",
-            "rotate_right": "o",
+            "forward": "8",
+            "backward": "2",
+            "left": "4",
+            "right": "6",
+            "rotate_left": "7",
+            "rotate_right": "9",
             # Speed control
-            "speed_up": "n",
-            "speed_down": "m",
+            "speed_up": "1",
+            "speed_down": "3",
             # quit teleop
-            "quit": "b",
+            "quit": "0",
         }
     )
 

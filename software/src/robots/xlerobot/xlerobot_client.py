@@ -59,9 +59,9 @@ class XLerobotClient(Robot):
 
         # Define three speed levels and a current index
         self.speed_levels = [
-            {"xy": 0.1, "theta": 30},  # slow
-            {"xy": 0.2, "theta": 60},  # medium
-            {"xy": 0.3, "theta": 90},  # fast
+            {"xy": 0.1, "theta": 15},  # slow
+            {"xy": 0.2, "theta": 30},  # medium
+            {"xy": 0.3, "theta": 60},  # fast
         ]
         self.speed_index = 0  # Start at slow
 
@@ -84,8 +84,8 @@ class XLerobotClient(Robot):
                 "right_arm_wrist_flex.pos",
                 "right_arm_wrist_roll.pos",
                 "right_arm_gripper.pos",
-                "head_motor_1.pos",
-                "head_motor_2.pos",
+                "head_pan.pos",
+                "head_tilt.pos",
                 "x.vel",
                 "y.vel",
                 "theta.vel",
