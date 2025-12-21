@@ -289,7 +289,7 @@ AFRAME.registerComponent('controller-updater', {
     leftXTip.setAttribute('radius-top', '0');
     leftXTip.setAttribute('color', '#ff0000');
     leftXTip.setAttribute('position', '0.055 0 0');
-    leftXTip.setAttribute('rotation', '0 0 90');
+    leftXTip.setAttribute('rotation', '0 0 -90');
     this.leftHand.appendChild(leftXTip);
 
     // Y-axis (Green) - Up
@@ -346,7 +346,7 @@ AFRAME.registerComponent('controller-updater', {
     rightXTip.setAttribute('radius-top', '0');
     rightXTip.setAttribute('color', '#ff0000');
     rightXTip.setAttribute('position', '0.055 0 0');
-    rightXTip.setAttribute('rotation', '0 0 90');
+    rightXTip.setAttribute('rotation', '0 0 -90');
     this.rightHand.appendChild(rightXTip);
 
     // Y-axis (Green) - Up
@@ -491,11 +491,8 @@ AFRAME.registerComponent('controller-updater', {
                 };
                 // 侧边按钮
                 leftController.buttons = {
-                    a: !!leftGamepad.buttons[3]?.pressed,
-                    b: !!leftGamepad.buttons[4]?.pressed,
-                    squeeze: !!leftGamepad.buttons[1]?.pressed,
-                    thumbstick: !!leftGamepad.buttons[2]?.pressed,
-                    menu: !!leftGamepad.buttons[6]?.pressed
+                    X: !!leftGamepad.buttons[4]?.pressed,
+                    Y: !!leftGamepad.buttons[5]?.pressed,
                 };
             }
         }
@@ -568,11 +565,8 @@ AFRAME.registerComponent('controller-updater', {
                 };
                 // 侧边按钮
                 rightController.buttons = {
-                    a: !!rightGamepad.buttons[3]?.pressed,
-                    b: !!rightGamepad.buttons[4]?.pressed,
-                    squeeze: !!rightGamepad.buttons[1]?.pressed,
-                    thumbstick: !!rightGamepad.buttons[2]?.pressed,
-                    menu: !!rightGamepad.buttons[6]?.pressed
+                    A: !!rightGamepad.buttons[4]?.pressed,
+                    B: !!rightGamepad.buttons[5]?.pressed,
                 };
             }
         }
