@@ -67,7 +67,7 @@ In the code above we initialized our agent with the maneuver tools we created ea
 Before going to LLM, camera image is specially augmented to make it easier for robot to understand its environment: 
 
 <div style="text-align: center; font-style: italic">
-  <img src="https://github.com/user-attachments/assets/31f063b9-2463-4ba5-b5da-311f16788576" width="60%">
+  <img src="https://github.com/user-attachments/assets/296f6f60-52a4-4fa0-9a77-a113b4868f83" width="60%">
   <p>That's how your robot sees the world.</p>
 </div>
 
