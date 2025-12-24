@@ -38,6 +38,8 @@ getting_started/install
 getting_started/SO101
 getting_started/XLeRobot_teleop
 getting_started/LLM_agent
-getting_started/RL_VLA
+getting_started/VLA_ACT
+getting_started/VLA_Smol
+getting_started/RL
 getting_started/raspberry_pi_setup.md
 ```
