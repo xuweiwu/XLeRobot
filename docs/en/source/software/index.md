@@ -30,7 +30,7 @@ For basic version of XLeRobot, you don't need a RaspberryPi. Just use your lapto
 
 ### [VLA (ACT)](getting_started/VLA_ACT.md)
 
-### [VLA (SmolVLA & more)](getting_started/VLA_Smol.md)
+### [VLA (SmolVLA & more)](getting_started/VLA_smol.md)
 
 ### [Reinforcenment Learning (RL)](getting_started/RL.md)
 
@@ -45,7 +45,7 @@ getting_started/SO101
 getting_started/XLeRobot_teleop
 getting_started/LLM_agent
 getting_started/VLA_ACT
-getting_started/VLA_Smol
+getting_started/VLA_smol
 getting_started/RL
 getting_started/raspberry_pi_setup.md
 ```
