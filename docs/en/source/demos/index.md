@@ -64,3 +64,18 @@ Demo made by Mitchell Chen
 ### Community Demo
 
 Welcome everyone to contribute here! You can directly add your demos here by modifying [this file](https://github.com/Vector-Wangel/XLeRobot/edit/main/docs/en/source/demos/index.md) and submitting the pull request in github.
+
+#### From Astera Institute
+
+<video width="100%" controls>
+  <source src="https://vector-wangel.github.io/XLeRobot-assets/videos/Community/Brain_bot_by_astera.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+#### From Makermod
+
+<video width="100%" controls>
+  <source src="https://vector-wangel.github.io/XLeRobot-assets/videos/Community/makermod.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
