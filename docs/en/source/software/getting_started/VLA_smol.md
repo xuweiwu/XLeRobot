@@ -41,7 +41,8 @@ After training on **~20 episodes**, XLeRobot can:
 3. Place the object into the drawer
 4. Push the drawer in
 
-<img src="https://github.com/Vector-Wangel/XLeRobot-assets/blob/main/videos/Community/makermod/side-view.gif" width="80%" alt="VR Demo GIF"/>
+
+<img src="https://vector-wangel.github.io/XLeRobot-assets/videos/Community/makermod/side-view.gif?raw=true" width="80%" alt="VR Demo GIF"/>
 
 **Key aspects:**
 - **One-shot grasp** of the drawer handle (avoid jitter during data collection)
@@ -298,8 +299,8 @@ python -m lerobot.record \
 
 ## 8) VR Control for XLeRobot
 
-<img src="https://github.com/Vector-Wangel/XLeRobot-assets/blob/main/videos/Community/makermod/VR_DEMO_SHOW.gif" width="80%" alt="VR Demo GIF"/>
 
+<img src="https://vector-wangel.github.io/XLeRobot-assets/videos/Community/makermod/VR_DEMO_SHOW.gif?raw=true" width="80%" alt="VR Demo GIF"/>
 
 
 ### Robot: Rumi
@@ -322,7 +323,9 @@ Rumi is a new-generation bimanual robot with a liftable chassis:
 For VR control, follow the repository's README to configure VR devices, ROS 2 nodes, and robot drivers.
 
 ---
-<img src="https://github.com/Vector-Wangel/XLeRobot-assets/blob/main/videos/Community/makermod/VR_DEMO_SHOW2.gif" width="80%" alt="VR Demo GIF"/>
+
+<img src="https://vector-wangel.github.io/XLeRobot-assets/videos/Community/makermod/VR_DEMO_SHOW2.gif?raw=true" width="80%" alt="VR Demo GIF"/>
+
 ## 9) Practical Tips / Common Pitfalls
 
 ### Data Quality
@@ -335,12 +338,13 @@ For tasks like drawers:
 - **Left arm:** stable pulling trajectory
 - **Right arm:** precise pick/place with minimal hesitation
 
-<img src="https://github.com/Vector-Wangel/XLeRobot-assets/blob/main/videos/Community/makermod/VR_DEMO_SHOW3.gif" width="80%" alt="VR Demo GIF"/>
+<img src="https://vector-wangel.github.io/XLeRobot-assets/videos/Community/makermod/VR_DEMO_SHOW3.gif?raw=true" width="80%" alt="VR Demo GIF"/>
+
 ### Device Ports
 If ports change after reboot, consider using persistent udev rules to stabilize device naming.
 ---
 
-<img src="https://github.com/Vector-Wangel/XLeRobot-assets/blob/main/videos/Community/makermod/VR_DEMO_SHOW4.gif" width="80%" alt="VR Demo GIF"/>
+<img src="https://vector-wangel.github.io/XLeRobot-assets/videos/Community/makermod/VR_DEMO_SHOW4.gif?raw=true" width="80%" alt="VR Demo GIF"/>
 
 ## 10) Quick Checklist
 
