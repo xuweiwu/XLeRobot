@@ -1,4 +1,4 @@
-## VLA (ACT)
+## VLA (1) ACT
 
 Single arm VLA policy implementation on XLeRobot:
 

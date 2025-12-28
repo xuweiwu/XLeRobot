@@ -1,4 +1,4 @@
-# XLeRobot VLA User Guide
+# VLA (2) ACT & SmolVLA
 
 This document explains how to use **XLeRobot** for:
 1. Training and running **SmolVLA** with a **bimanual SO-101** setup and **three-camera data collection**
@@ -19,15 +19,17 @@ XLeRobot is a LeRobot-based setup that adds:
   - `side_cam`
 
 ### References
-- SmolVLA base model: https://huggingface.co/lerobot/smolvla_base
-- ACT documentation: https://huggingface.co/docs/lerobot/en/act
-- XLeRobot / LeRobot fork usage: https://github.com/kahowang/lerobot
-- Rumi: https://github.com/MakerModsRobotics/Rumi
-- XLeRobot improvement upgrades: https://github.com/MakerModsRobotics/xlerobot_improvements
+- [SmolVLA base model](https://huggingface.co/lerobot/smolvla_base)
+- [ACT documentation](https://huggingface.co/docs/lerobot/en/act)
+- [XLeRobot / LeRobot fork usage](https://github.com/kahowang/lerobot)
+- [Rumi](https://github.com/MakerModsRobotics/Rumi)
+- [XLeRobot improvement upgrades](https://github.com/MakerModsRobotics/xlerobot_improvements)
 
 ---
 
 ## 2) Demo Tasks (What SmolVLA Can Learn with ~20 Episodes)
+
+
 
 ### Demo 1 - Drawer + Pick + Place + Grasp (Bimanual)
 After training on **~20 episodes**, XLeRobot can:
@@ -35,6 +37,8 @@ After training on **~20 episodes**, XLeRobot can:
 2. Pick an object
 3. Place the object into the drawer
 4. Push the drawer in
+
+<img src="https://vector-wangel.github.io/XLeRobot-assets/videos/Community/makermod/side-view.gif?raw=true" width="100%" alt="VR Demo GIF"/>
 
 **Key aspects:**
 - **One-shot grasp** of the drawer handle (avoid jitter during data collection)
@@ -46,6 +50,8 @@ After training on **~20 episodes**, XLeRobot can:
 1. Grasp the zipper pull tab
 2. Grasp the pencil case handle and stabilize the case
 3. Pull the zipper tab to open the zipper smoothly
+
+<img src="https://vector-wangel.github.io/XLeRobot-assets/videos/Community/makermod/unzip-bagger.gif?raw=true" width="100%" alt="VR Demo GIF"/>
 
 **Key difficulties:**
 - The zipper pull is often in a **top-down camera blind spot**, requiring **one-shot** grasp (avoid re-grasp)
@@ -291,11 +297,11 @@ python -m lerobot.record \
 
 ### Robot: Rumi
 Rumi is a new-generation bimanual robot with a liftable chassis:
-https://www.makermods.ai/rumi
+[Rumi](https://www.makermods.ai/rumi)
 
 ### Repositories
-1. VR controller repo: https://github.com/IIMFINE/lerobot_vr_controller.git
-2. LeRobot repo (fork): https://github.com/IIMFINE/lerobot.git
+1. [VR controller repo](https://github.com/IIMFINE/lerobot_vr_controller.git)
+2. [LeRobot repo (fork)](https://github.com/IIMFINE/lerobot.git)
 
 ### Features
 1. VR → robot arm mapping
@@ -340,15 +346,15 @@ If ports change after reboot, consider using persistent udev rules to stabilize 
 ## Appendix: Links
 
 ### Official Documentation
-- LeRobot Docs: https://huggingface.co/docs/lerobot
-- ACT Documentation: https://huggingface.co/docs/lerobot/en/act
-- Imitation Learning on Real-World Robots: https://huggingface.co/docs/lerobot/il_robots
-- Getting Started with Real-World Robots: https://huggingface.co/docs/lerobot/en/getting_started_real_world_robot
+- [LeRobot Docs](https://huggingface.co/docs/lerobot)
+- [ACT Documentation](https://huggingface.co/docs/lerobot/en/act)
+- [Imitation Learning on Real-World Robots](https://huggingface.co/docs/lerobot/il_robots)
+- [Getting Started with Real-World Robots](https://huggingface.co/docs/lerobot/en/getting_started_real_world_robot)
 
 ### Models & Repositories
-- SmolVLA base: https://huggingface.co/lerobot/smolvla_base
-- ACT example model: https://huggingface.co/lerobot/act_aloha_sim_transfer_cube_human
-- XLeRobot fork usage: https://github.com/kahowang/lerobot
-- Rumi robot: https://www.makermods.ai/rumi
-- VR controller: https://github.com/IIMFINE/lerobot_vr_controller.git
-- LeRobot fork: https://github.com/IIMFINE/lerobot.git
+- [SmolVLA base](https://huggingface.co/lerobot/smolvla_base)
+- [ACT example model](https://huggingface.co/lerobot/act_aloha_sim_transfer_cube_human)
+- [XLeRobot fork usage](https://github.com/kahowang/lerobot)
+- [Rumi robot](https://www.makermods.ai/rumi)
+- [VR controller](https://github.com/IIMFINE/lerobot_vr_controller.git)
+- [LeRobot fork](https://github.com/IIMFINE/lerobot.git)
